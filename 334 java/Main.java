@@ -1,4 +1,4 @@
-// Single-level inheritance
+
 class Animal {
     void eat() {
         System.out.println("Animal eats");
@@ -10,8 +10,6 @@ class Dog extends Animal {
         System.out.println("Dog barks");
     }
 }
-
-// Multilevel inheritance
 class Puppy extends Dog {
     void play() {
         System.out.println("Puppy plays");
@@ -21,17 +19,15 @@ class Puppy extends Dog {
 public class Main {
     public static void main(String[] args) {
 
-        // Single-level inheritance
+        
         Dog d = new Dog();
-        d.eat();   // From Animal
-        d.bark();  // From Dog
+        d.eat();  
+        d.bark();  
 
         System.out.println();
-
-        // Multilevel inheritance
         Puppy p = new Puppy();
-        p.eat();   // From Animal
-        p.bark();  // From Dog
-        p.play();  // From Puppy
+        p.eat();  
+        p.bark(); 
+        p.play();  
     }
 }
